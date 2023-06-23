@@ -23,9 +23,9 @@ const dispatch = useDispatch()
     <div className="App">
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand onClick={() => {navigate('/samjin-app')}} >Samjin_Shop</Navbar.Brand>
+          <Navbar.Brand onClick={() => {navigate('/')}} >Samjin_Shop</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link onClick={() => {navigate('/samjin-app')}}>Home</Nav.Link>
+            <Nav.Link onClick={() => {navigate('/')}}>Home</Nav.Link>
             <Nav.Link onClick={() => {navigate('/about')}}>About</Nav.Link>
             <Nav.Link onClick={() => {navigate('/about/info')}}>Infomation</Nav.Link>
             <Nav.Link onClick={() => {navigate('/cart')}}>카트</Nav.Link>
@@ -62,7 +62,7 @@ const dispatch = useDispatch()
         }
         />
 
-        <Route path='samjin-app' element={<div>Home Page</div>} />
+        <Route path='/' element={<div>Home Page</div>} />
         <Route path='about' element={<About />}>
           <Route path='info' element={<div>Infomation</div>} />
           <Route path='loca' element={<div>Location</div>} />
