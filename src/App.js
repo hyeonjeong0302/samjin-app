@@ -37,7 +37,7 @@ const dispatch = useDispatch()
         <Route
         path="samjin-app" element={
           <Container>
-            <img src={process.env.PUBLIC_URL + "./images/visual_main_01.jpg"}  alt=""/>
+            <img src={process.env.PUBLIC_URL + "/images/visual_main_01.jpg"}  alt=""/>
             <h2>Best 상품</h2>
             <Row>
            {
